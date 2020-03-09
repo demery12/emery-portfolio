@@ -29,7 +29,7 @@ $(function() {
         addToGallery(project, projectsMapping[project]);
     }
     // load the navbar html, then populate the projects dropdown
-    $("#nav-placeholder").load("/emery-portfolio/nav.html", function() {
+    $("#nav-placeholder").load(projectBase + "nav.html", function() {
         for(project of Object.keys(projectsMapping)) {
                 addToNavBar(project, projectsMapping[project]);
         }
@@ -42,7 +42,7 @@ function addToGallery(project, projectInfo) {
         '<div class="col-md-4">' +
             '<div class="thumbnail">' +
                 '<a href="'+ projectInfo.projectLink + '">' +
-                    '<img src="static/imgs/'+ projectInfo.imgName + '" alt="'+ projectInfo.projectName + '" style="width:100%">' +
+                    '<img src="static/imgs/'+ projectInfo.imgName + '" alt="'+ projectInfo.projectName + '" style="width=300px;">' +
                     '<div class="caption">' +
                         '<p><strong>'+ projectInfo.projectName + '</strong>: ' + projectInfo.projectDescription + '</p>' +
                     '</div>' +
@@ -64,7 +64,7 @@ function getProjectBase() {
     if (window.location.href.includes('emery-portfolio')) {
         projectBase = '/emery-portfolio/'
     } else {
-        projectBase = '/dylan-emery.com/'
+        projectBase = '/'
     }
     return projectBase
 }
