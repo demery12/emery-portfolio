@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Dylan Emery Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
 <div id="nav-placeholder">
@@ -13,56 +14,22 @@
 </div>
 <div class="container">
     <div>
-		<h1 class='title'>Dylan Emery</h1>
+		<h1 class='title'>Projects</h1>
     </div>
-    <div class="projects">
-        <div class="responsive">
-          <div class="gallery">
-            <a href="BODL-Service/index.html">
-              <img src="static/imgs/BODL-Service-card.PNG" alt="BODL-Service">
-            </a>
-            <div class="desc">BODL-Service: A cocktail generating deep learning web app</div>
-          </div>
+    <div id="projects-gallery">
+        <div id="projects-grid" class="row">
         </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a href="towers/index.html">
-              <img src="static/imgs/towers-card.PNG" alt="Towers of Hanoi">
-            </a>
-            <div class="desc">Towers of Hanoi: A data visualization of the classic algorithm</div>
-          </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="https://bridge.haverford.edu/">
-              <img src="static/imgs/bridge-card.PNG" alt="The Bridge">
-            </a>
-            <div class="desc">The Bridge: A classical language vocabulary learning tool<</div>
-          </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-
-    <div style="padding:6px;">
-      <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-      <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-    </div>
-
-    <div id="projects">
-
-        <ul>
-            <li><a href="BODL-Service/index.html">BODL-Service: A cocktail generating deep learning web app</a></li>
-            <li><a href="towers/index.html">Towers of Hanoi: A data visualization of the classic algorithm</a></li>
-            <li><a href="https://bridge.haverford.edu/">The Bridge: A classical language vocabulary learning tool</a></li>
-        </ul>
     </div>
 </div>
-<script>
-$(function(){
-  $("#nav-placeholder").load("/emery-portfolio/nav.html");
-});
-</script>
+
+<div id='contact-info' class="container" >
+    <h2>Contact</h2>
+    <a id="resume" href="static/imgs/Dylan_Emery_Resume.pdf">Resume</a>
+    <a href="https://github.com/demery12"><img class="logo" alt="Link to Dylan's GitHub" src="static/imgs/GitHub_Logo.png"></a>
+    <a href="https://www.linkedin.com/in/dylan-emery-a8821313a/"><img class="logo" alt="Link to Dylan's LinkedIn" src="static/imgs/LI-Logo.png"></a>
+</div>
+
+
+<script src="projects_writer.js"></script>
 </body>
 </html>

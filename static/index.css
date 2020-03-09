@@ -1,57 +1,31 @@
-.title
-{
-	margin-top:75px;
+.title {
+	margin-top: 75px;
 	text-align: center;
 }
 
-#projects
-{
+#resume {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 1.6em;
+   vertical-align: bottom;
+}
+
+#projects {
     margin: auto;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
+
+#contact-info {
+    padding: 40px;
+    text-align: center;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.logo {
+    width: 80px;
+    cursor: pointer;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+.logo:hover {
+    width: 85px;
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 33.333333%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
