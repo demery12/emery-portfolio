@@ -7,8 +7,14 @@
     font-family: Georgia;
     font-weight: bold;
     font-size: 1.6em;
-   vertical-align: bottom;
+    vertical-align: bottom;
+    text-decoration: none;
 }
+
+#resume:hover {
+    font-size: 1.7em;
+}
+
 
 #projects {
     margin: auto;

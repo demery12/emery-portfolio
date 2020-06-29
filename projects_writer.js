@@ -17,13 +17,20 @@ $(function() {
 
                             },
                             'bridge': {
-                                'imgName': 'bridge.jpg',
+                                'imgName': 'bridge-card2.jpg',
                                 'projectName': 'The Bridge',
                                 'projectDescription': 'A classical language vocabulary learning tool',
                                 'projectLink': 'https://bridge.haverford.edu/',
                                 'gitHubLink': 'https://github.com/HCDigitalScholarship/bridge-repo'
-
                             },
+                            'vroom-vroom':{
+                                'imgName': 'vroom-vroom.PNG',
+                                'projectName': 'Vroom Vroom',
+                                'projectDescription': 'An HTML5 driving game',
+                                'projectLink': 'https://vroom-vroom-game.herokuapp.com/index.html',
+                                'gitHubLink': 'https://github.com/demery12/vroom-vroom'
+                            },
+
                           }
     for(project of Object.keys(projectsMapping)) {
         addToGallery(project, projectsMapping[project]);
@@ -39,7 +46,7 @@ $(function() {
 
 function addToGallery(project, projectInfo) {
     $('#projects-gallery').append(
-        '<div class="col-md-4">' +
+        '<div class="col-md-3">' +
             '<div class="thumbnail">' +
                 '<a href="'+ projectInfo.projectLink + '">' +
                     '<img src="static/imgs/'+ projectInfo.imgName + '" alt="'+ projectInfo.projectName + '" style="width=300px;">' +
